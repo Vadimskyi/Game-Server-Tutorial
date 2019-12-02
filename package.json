@@ -1,0 +1,23 @@
+{
+  "name": "mmo-server",
+  "version": "1.0.0",
+  "description": "best server",
+  "main": "index.js",
+  "scripts": {
+    "build" : "tsc -p .",
+    "productionServer": "sudo forever start -o logs/log.log -e logs/err.log dist/index.js",
+    "localServer": "set DEBUG=socket.io*&&ts-node-dev --respawn --transpileOnly src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadimskyi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.12.14",
+    "@types/socket.io": "^2.1.4",
+    "socket.io": "^2.3.0",
+    "ts-node": "^8.5.4",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.2",
+    "typescript-tslint-plugin": "^0.5.5"
+  }
+}

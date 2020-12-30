@@ -1,3 +1,3 @@
-import {SocketServer} from './server';
+import { SocketServer } from './server';
 let app = new SocketServer();
-export {app};
+export { app };

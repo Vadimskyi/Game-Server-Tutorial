@@ -1,6 +1,6 @@
 import { createServer, Server } from 'http';
 import * as io from 'socket.io';
-import { SocketController } from './socket_controller';
+import { SocketController } from './SocketController';
 
 export class SocketServer {
   public static readonly PORT:number = 2222;
